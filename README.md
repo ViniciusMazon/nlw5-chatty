@@ -11,3 +11,4 @@ Um chat de suporte para ser integrado em websites
 [PostgreSQL](https://www.postgresql.org/)
 [Docker](https://www.docker.com/)
 [Adminer](https://www.adminer.org/)
+[uuid](https://www.npmjs.com/package/uuid)
