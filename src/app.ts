@@ -1,7 +1,9 @@
 import express from 'express';
 
-const app = express();
+import routes from './routes.routes';
 
-app.get('/ping', (request, response) => response.send('pong'))
+const app = express();
+app.use(express.json());
+app.use(routes)
 
 export default app;
