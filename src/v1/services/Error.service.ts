@@ -9,10 +9,10 @@ class ErrorService {
     throw new this.error(code, message);
   }
 
-  private error(code, message) {
+  private error(code = '400', message = 'Unexpected error') {
     this.code = code;
-    this.message = message || 'Unexpected error';
+    this.message = message;
   }
 }
 
-export default new ErrorService;
+export default new ErrorService();
