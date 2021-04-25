@@ -13,8 +13,8 @@ class SettingsController {
     });
 
     try {
-      const result = await settingsRepository.save(settings);
-      return response.status(201).json(result.id);
+      await settingsRepository.save(settings);
+      return response.status(201).json(settings.id);
     } catch (error) {
       return response
         .status(500)
