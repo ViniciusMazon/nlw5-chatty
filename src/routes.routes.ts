@@ -1,7 +1,10 @@
 import { Router } from 'express';
+import {SettingsController} from './app/controllers/Settings.controller';
 
 const routes = Router();
 
-routes.get('/ping', (request, response) => response.json({pong: true}));
+const settings = new SettingsController();
+
+routes.get('/settings', settings.post);
 
 export default routes;
