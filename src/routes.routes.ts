@@ -5,6 +5,6 @@ const routes = Router();
 
 const settings = new SettingsController();
 
-routes.get('/settings', settings.post);
+routes.post('/settings', settings.post);
 
 export default routes;
