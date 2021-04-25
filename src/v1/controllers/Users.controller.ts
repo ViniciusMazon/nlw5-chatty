@@ -7,7 +7,7 @@ class UsersController {
 
     try {
       const result = await usersService.create(request.body);
-      return response.status(201).send(result);
+      return response.status(201).send({result});
     } catch (err) {
       return response.status(err.code).json({ message: err.message });
     }

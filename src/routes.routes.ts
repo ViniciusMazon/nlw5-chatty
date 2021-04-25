@@ -17,5 +17,6 @@ routes.post('/v1/users', users.post);
 
 // Messages
 routes.post('/v1/messages', messages.post);
+routes.get('/v1/messages/:user_id', messages.showByUser);
 
 export default routes;
