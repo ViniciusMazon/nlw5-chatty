@@ -5,7 +5,7 @@ export default {
   username: process.env.TYPEORM_USERNAME,
   password: process.env.TYPEORM_PASSWORD,
   database: 'chatty',
-  entities: ['./src/app/entities/**.ts'],
+  entities: ['./src/v1/entities/**.ts'],
   migrations: ['./src/database/migrations/**.ts'],
   cli: {
     migrationsDir: './src/database/migrations',
