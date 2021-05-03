@@ -21,3 +21,5 @@ Um chat de suporte para ser integrado em websites
 [uuid](https://www.npmjs.com/package/uuid)
 <br />
 [SocketIO](https://socket.io/)
+<br />
+[Ejs](https://ejs.co/)

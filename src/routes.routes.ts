@@ -9,6 +9,8 @@ const settings = new SettingsController();
 const users = new UsersController();
 const messages = new MessagesController();
 
+routes.get('/', (request, response) => response.render('html/client.html'));
+
 // Settings
 routes.post('/v1/settings', settings.post);
 
