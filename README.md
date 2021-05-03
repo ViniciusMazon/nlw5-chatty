@@ -19,3 +19,5 @@ Um chat de suporte para ser integrado em websites
 [Adminer](https://www.adminer.org/)
 <br />
 [uuid](https://www.npmjs.com/package/uuid)
+<br />
+[SocketIO](https://socket.io/)
