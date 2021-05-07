@@ -11,7 +11,7 @@ const http = createServer(app);
 const io = new Server(http);
 
 io.on('connection', (socket: Socket) => {
-  console.log('Connection ok', socket.id);
+  console.log('📡 new connection with id:: ', socket.id);
 });
 
 app.use(express.static(path.join(__dirname, '..', 'public')));
@@ -22,4 +22,4 @@ app.set('view engine', 'html');
 app.use(express.json());
 app.use(routes);
 
-export default http;
+export { http, io };
